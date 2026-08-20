@@ -414,7 +414,8 @@ the basic opertors to check the condition is true or false
 7. === it check that the data type of the value is same or not and also value is equal
 8. && it is check that both the condition is true , if false it didn't goes to work 
 9. || it is check that both from one condition is true , if true the whole code will work
-10.
+10.?? : Nullish Coalescing  Operation
+11. condition ? true : false , terniary opeartor
 */
 // =========================
 //  2. if statement
@@ -512,3 +513,61 @@ switch (month) {
 /*
 this do same work as nested statement but it is easy to write and save time to work 
 */
+
+//================================
+//  true and false 
+//================================
+
+// **************************************************
+//  falsy value
+//***************************************************
+
+/*
+this value means they are fasle as we assuemed , we don't check if they are false or not
+their are some value we assumed false value :-
+1. false
+2. 0
+3. -0
+4. BigINt
+5. ""
+6. null
+7. undefined
+8. NaN
+
+*/
+
+
+// *****************************************
+//  truthy value
+// ********************************************
+
+/*
+this value means they are true as we assuemed , we don't check if they are true or not
+their are some value we assumed true value :-
+aside from falsy value their are all truthy value
+but some value will surpice you . you should know this
+1. "0"
+2. 'false'
+3. " "
+4. {}
+5. []
+6. function(){}
+
+*/
+
+// *****************************
+// Nullish Coalescing  Operations 
+//********************************
+
+/*
+it check which value should enter in variable like this :-
+let val1;
+val1 = 5 ?? 10
+console.log(va1);  // output : 15
+val1 = null ?? 10 
+console.log(val1);  // output : 10 
+val1 = undifined ?? 5
+console.log(val1); // output :5
+when the value we get from sever / backend is null/undefined value we have to make the code to word like this
+
+ */
