@@ -414,7 +414,8 @@ the basic opertors to check the condition is true or false
 7. === it check that the data type of the value is same or not and also value is equal
 8. && it is check that both the condition is true , if false it didn't goes to work 
 9. || it is check that both from one condition is true , if true the whole code will work
-10.
+10.?? : Nullish Coalescing  Operation
+11. condition ? true : false , terniary opeartor
 */
 // =========================
 //  2. if statement
@@ -512,3 +513,131 @@ switch (month) {
 /*
 this do same work as nested statement but it is easy to write and save time to work 
 */
+
+//================================
+//  true and false 
+//================================
+
+// **************************************************
+//  falsy value
+//***************************************************
+
+/*
+this value means they are fasle as we assuemed , we don't check if they are false or not
+their are some value we assumed false value :-
+1. false
+2. 0
+3. -0
+4. BigINt
+5. ""
+6. null
+7. undefined
+8. NaN
+
+*/
+
+
+// *****************************************
+//  truthy value
+// ********************************************
+
+/*
+this value means they are true as we assuemed , we don't check if they are true or not
+their are some value we assumed true value :-
+aside from falsy value their are all truthy value
+but some value will surpice you . you should know this
+1. "0"
+2. 'false'
+3. " "
+4. {}
+5. []
+6. function(){}
+
+*/
+
+// *****************************
+// Nullish Coalescing  Operations 
+//********************************
+
+/*
+it check which value should enter in variable like this :-
+let val1;
+val1 = 5 ?? 10
+console.log(va1);  // output : 15
+val1 = null ?? 10 
+console.log(val1);  // output : 10 
+val1 = undifined ?? 5
+console.log(val1); // output :5
+when the value we get from sever / backend is null/undefined value we have to make the code to word like this
+
+*/
+
+//==============================================================
+//   jump statement
+//==============================================================
+
+//****************************************
+//  1. break 
+//****************************************
+
+/* 
+this only written in inside of loop 
+This statement work as that when it run the it leave the scope and move outside the loop 
+meaning it is used to stop the loop in middile
+*/
+
+//****************************************
+//  2. continue
+//****************************************
+
+/*
+this statement only written in loop .
+this statement work as that when it run skip the indent of its rotation . but contiune the loop 
+meaning when its condition comes true it skip the commard below this  
+*/
+
+//==============================================================
+//  loops
+//==============================================================
+
+
+//*****************************************
+// 1. for loop 
+//*****************************************
+/*
+In this loop there is fixed range betwwen the range number will  print when the its run
+the general way to write the for loop is :- 
+
+
+for (let variable value = 0; variable value < array.length; variable value++) {
+  const element = array[variable value];
+  
+}
+
+we can make nested for loop as well as 
+
+
+*/
+
+//*****************************************
+// 2.  while loop 
+//*****************************************
+
+/*
+It works when the condition comes true 
+in we need to update the the variable by Qurself
+the general way to write the while is :-
+while (condition) {
+  
+}
+
+we also write the while loop with help of the array 
+let aaray =[1,2,3,,4,5,6,7,8,9]
+let a =0
+while (a<array.length){
+  console.log(`the value of array ${array[a]}`);
+  a++
+  }
+*/
+
+
