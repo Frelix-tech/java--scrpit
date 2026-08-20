@@ -512,3 +512,11 @@ switch (month) {
 /*
 this do same work as nested statement but it is easy to write and save time to work 
 */
+  
+console.log("utsav mali");
+if (true) {
+  console.log("hello");
+  const hello = {
+    name: "utsav mali"
+  }
+}
